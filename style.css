@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+/* OVERALL CSS */
+html {
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(20,20,20);
+}
+p {
+  color: white;
+}
+body {
+margin-left: 25px;
+margin-right: 25px;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: white;
+}
+a {
+  text-decoration: underline;
+  color: white;
+}
+img {
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+footer {
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: .75rem;
+}
+/* CUSTOM CSS */
+.avatar {
+  border-radius: 50%;
+  top: 3px;
+}
+.text-color {
+	color: white;
+}
+.center {
+  text-align: center;
+}
+.margin-centered{
+	margin-left: auto; margin-right: auto;
+}
+.width-minimum {
+	display: inline-block;
+}
+.titlelink {
+  text-decoration: none;
+  color: white;
+}
+.wideline {
+  background-color: magenta;
+  border-color: transparent;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 2px;
+}
+.space {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 1rem;
+}
+.video-creator-input {
+	font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.titletext {
+ bottom: -10px;
+}
+.subtext {
+  top: -10px;
+}
+.reasons {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.terms {
+  font-size: .5rem;
+  text-align: left;
+}
+/* footer squish */
+.stupidfooter {
+  line-height: .50rem;
+}
+@media screen and (min-width: 600px) {
+  .stupidfooter {
+    font-size: 1rem;
+  }
+}
+/* WATCH PAGE */
+.videoPlayer {
+  width: 700px;
+  text-align: center;
+  background-color: black;
+}
+.watchbox {
+  background-color: rgb(40,40,40);
+  height: 480px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .videoPlayer {
+    width: 300px;
+  }
+  .watchbox {
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* FEATURED */
+.featured {
+  background-color: rgb(40,40,40);
+  height: 400px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: inline-block;
+}
+.featuredbox {
+  background-color: rgb(40,40,40);
+  height: 420px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.featuredtext {
+  position: absolute;
+  top: 100px;
+  left: 16px;
+}
+.featuredsubtext {
+  position: absolute;
+  bottom: 200px;
+  left: 16px;
+}
+.featuredimage {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  text-align: right;
+  }
+@media screen and (max-width: 800px) {
+  .featuredimage {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .featuredbox {
+    height: 220px;
+  }
+  .featured {
+  height: 200px;
+  display: inline-block;
+  }
+  .featuredtext {
+  top: 10px;
+  left: 16px;
+  text-align: center;
+  }
+  .featuredsubtext {
+  bottom: 20px;
+  left: 16;
+  text-align: center;
+  }
+}
+
+/* topbar stuff */
+.signupandin {
+  float: right;
+  text-align: right;
+  width: 33%;
+  padding-top: 10px;
+}
+.cornertitle {
+  float: left;
+  width: 66%;
+}
+/* Clear floats after the columns */
+.topbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .cornertitle {
+    width: 100%;
+    text-align: center;
+  }
+  .signupandin {
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+  }
+}
+
+/* SCROLL MENUS */
+div.scrollmenu {
+  background-color: rgb(40,40,40);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.thumbnail {
+  width: 150px;
+  display: inline-block;
+  overflow: hidden;
+}
