@@ -1,23 +1,28 @@
 window.addEventListener('load', 
   function() {
-		var isSignedIn = localStorage.getItem("profile-email") == undefined ? false : true;
-		var hasVideo = sessionStorage.getItem("film") == undefined ? false : true;
+		let isSignedIn = localStorage.getItem("profile-auth") == 'bXJib25lczEw';
+    console.log(isSignedIn);
+		let hasVideo = sessionStorage.getItem("film") != undefined;
 		switch(location.pathname) {
-			case "/signup.html":
+      case "/browse/":
+        if(!isSignedIn) {
+          location.replace("/");
+        }
+			case "/signup/":
 				if(isSignedIn) {
-					location.replace("/browse.html");
+					location.replace("/browse");
 				}
 				break;
-			case "/login.html":
+			case "/login/":
 				if(isSignedIn) {
-					location.replace("/browse.html");
+					location.replace("/browse");
 				}
 				break;
-			case "/watch.html":
+			case "/watch/":
 				if(!isSignedIn) {
-					location.replace("/login.html");
+					location.replace("/login");
 				} else if(!hasVideo) {
-					location.replace("/browse.html");
+					location.replace("/browse");
 				}
 				break;
 		}
