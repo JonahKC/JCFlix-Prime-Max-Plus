@@ -1,13 +1,13 @@
 window.addEventListener('load', 
   function() {
 		let isSignedIn = localStorage.getItem("profile-auth") == 'bXJib25lczEw';
-    console.log(isSignedIn);
 		let hasVideo = sessionStorage.getItem("film") != undefined;
 		switch(location.pathname) {
       case "/browse/":
         if(!isSignedIn) {
-          location.replace("/");
+          location.replace("/login");
         }
+        break;
 			case "/signup/":
 				if(isSignedIn) {
 					location.replace("/browse");

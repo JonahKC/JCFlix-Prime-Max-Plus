@@ -10,6 +10,6 @@ function login() {
     location.replace("/browse/");
   } else {
     passwordInput.value = "";
-    alert("Oof: you didn't type the correct password")
+    alert("OOF: Incorrect password, please try again.")
   }
 }
